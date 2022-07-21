@@ -83,10 +83,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contacts-link.header:hover,
-.contacts-link.header:focus {
-  color: var(--accent-color);
-}
 
 /* main section hero*/
 
@@ -228,8 +224,8 @@ address {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.contacts-link.footer:hover,
-.contacts-link.footer:focus,
+.contacts-link:hover,
+.contacts-link:focus,
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
