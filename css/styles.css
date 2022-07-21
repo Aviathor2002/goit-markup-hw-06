@@ -20,6 +20,25 @@ body {
 .cursor {
   cursor: pointer;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+}
+
 /* logo */
 
 .logo {
@@ -30,8 +49,6 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-
-  text-decoration: none;
 }
 .logo.footer {
   color: var(--primary-white-color);
@@ -42,36 +59,32 @@ body {
 
 /* Header */
 
-.link {
+.nav-link {
   color: var(--primary-title-color);
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  text-decoration: none;
 }
-.link:hover,
-.link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
 }
-.link.constanta {
+.nav-link.current {
   color: var(--accent-color);
 }
 
-.contacts-header {
+.contacts-link.header {
   color: var(--primary-text-color);
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  text-decoration: none;
 }
-.contacts-header:hover,
-.contacts-header:focus {
+.contacts-link.header:hover,
+.contacts-link.header:focus {
   color: var(--accent-color);
 }
 
@@ -93,6 +106,7 @@ body {
 }
 .button-main {
   background: var(--accent-color);
+  color: var(--primary-white-color);
 
   font-family: inherit;
 
@@ -100,8 +114,6 @@ body {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
-
-  color: var(--primary-white-color);
 }
 .button-main:hover,
 .button-main:focus {
@@ -200,9 +212,7 @@ address {
   font-style: normal;
 }
 
-.adressa {
-  text-decoration: none;
-
+.address-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -211,18 +221,16 @@ address {
   color: var(--primary-white-color);
 }
 
-.contacts-footer {
+.contacts-link.footer {
   color: rgba(255, 255, 255, 0.6);
-
-  text-decoration: none;
 
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.contacts-footer:hover,
-.contacts-footer:focus,
-.adressa:hover,
-.adressa:focus {
+.contacts-link.footer:hover,
+.contacts-link.footer:focus,
+.address-link:hover,
+.address-link:focus {
   color: var(--accent-color);
 }
