@@ -13,8 +13,20 @@ body {
   background-color: var(--primary-white-color);
 }
 
+.conteiner {
+  width: 1170px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  outline: 2px solid tomato;
+}
+
 .list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .cursor {
@@ -51,7 +63,11 @@ body {
   letter-spacing: 0.03em;
 }
 .logo.footer {
-  color: var(--primary-white-color);
+  display: inline-block;
+ margin-bottom: 20px;
+
+ color: var(--primary-white-color);
+  
 }
 .logo-web {
   color: var(--accent-color);
@@ -84,10 +100,14 @@ body {
   letter-spacing: 0.02em;
 }
 
+.header {
+  background-color: aquamarine;
+}
 /* main section hero*/
 
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 
 .hero-title {
@@ -96,30 +116,49 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.35;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 30;
 }
-.button-main {
-  background: var(--accent-color);
-  color: var(--primary-white-color);
+.hero-btn {
+  padding: 10px 26px;
+  border-radius: 4px;
+  min-width: 216px;
+  border: 1px solid transparent;
 
   font-family: inherit;
 
+  text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+
+  background: var(--accent-color);
+  color: var(--primary-white-color);
 }
-.button-main:hover,
-.button-main:focus {
+.hero-btn:hover,
+.hero-btn:focus {
   background-color: #188ce8;
   color: var(--primary-white-color);
 }
 
 /* section features */
 
+.conteiner.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.features {
+  background-color: aquamarine;
+}
+
 .featres-title {
+  margin: 0 0 10px 0;
+
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.03em;
@@ -127,6 +166,8 @@ body {
 }
 
 .features-text {
+  margin: 0;
+
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -134,26 +175,55 @@ body {
   color: var(--primary-text-color);
 }
 
-/* Team  */
+/* Work  */
 
-.team-title {
+.title {
+  margin: 0;
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.work .conteiner {
+  padding-bottom: 94px;
+}
+
+/* Team  */
+.team-card {
+  width: 270px;
+
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin: 0;
+}
+
+.team .conteiner {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team {
   background-color: #f5f4fa;
 }
 
 .team-name {
+  margin: 0 auto;
+  margin-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
-.team-speciality {
+.team-text {
+  margin: 0 auto;
+  margin-top: 10px;
+
   color: var(--primary-text-color);
 
   font-size: 16px;
@@ -164,6 +234,14 @@ body {
 /* portfolio section */
 
 .button {
+  
+
+  display: inline-block;  
+  padding: 6px 22px;
+
+  margin-top: 94;
+  margin-bottom: 50;
+
   background: #f5f4fa;
 
   color: var(--primary-title-color);
@@ -174,31 +252,56 @@ body {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+
+  border: 1px solid transparent;
+
+ 
 }
 
 .button:hover,
 .button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
+
+.list.btn { 
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
 
 /* portfolio projects */
 
 .project-name {
+  margin: 0;
+  margin-top: 20px;
+
   font-size: 18px;
   line-height: 2;
+
   letter-spacing: 0.06em;
 }
 
 .project-technology {
+  margin: 0;
+  margin-top: 9px;
+
   font-size: 16px;
   line-height: 1.9;
+
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
 }
 
 /* footer */
+
+.footer .conteiner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .footer {
   background-color: #2f303a;
@@ -209,7 +312,9 @@ address {
 }
 
 .address-link {
-  font-weight: 400;
+  margin-bottom: 9px;
+  display: inline-block;
+
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -218,6 +323,9 @@ address {
 }
 
 .contacts-link.footer {
+  margin-bottom: 9px;
+  display: inline-block;
+
   color: rgba(255, 255, 255, 0.6);
 
   font-size: 14px;

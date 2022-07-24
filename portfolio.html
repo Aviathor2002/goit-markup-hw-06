@@ -12,6 +12,11 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Web Studio</title>
@@ -19,38 +24,40 @@
 
   <body>
     <header class="header">
-      <nav>
-        <a href="index.html" class="logo link"><span class="logo-web">Web</span>Studio </a>
+      <div class="conteiner">
+        <nav>
+          <a href="index.html" class="logo link"><span class="logo-web">Web</span>Studio </a>
 
+          <ul class="list">
+            <li>
+              <a href="index.html" class="link nav-link">Студія</a>
+            </li>
+            <li>
+              <a href="portfolio.html" class="link nav-link current">Портфоліо</a>
+            </li>
+            <li>
+              <a href="link" class="link nav-link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
         <ul class="list">
           <li>
-            <a href="index.html" class="link nav-link">Студія</a>
+            <a class="link contacts-link header" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
           <li>
-            <a href="portfolio.html" class="link nav-link current">Портфоліо</a>
-          </li>
-          <li>
-            <a href="link" class="link nav-link">Контакти</a>
+            <a class="link contacts-link header" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <a class="link contacts-link header" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="link contacts-link header" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <main>
-      <section>
+      <section class="conteiner">
         <h1 class="visually-hidden">Projects</h1>
 
-        <ul class="list">
+        <ul class="list btn">
           <li>
             <button type="button" class="button cursor">Все</button>
           </li>
@@ -134,7 +141,8 @@
     </main>
 
     <footer class="footer link">
-      <a href="index.html" class="logo footer link"><span class="logo-web">Web</span>Studio </a>
+     <div class="conteiner"> 
+       <a href="index.html" class="logo footer link"><span class="logo-web">Web</span>Studio </a>
 
       <address>
         <ul class="list">
@@ -157,6 +165,7 @@
           </li>
         </ul>
       </address>
+    </div>
     </footer>
   </body>
 </html>
