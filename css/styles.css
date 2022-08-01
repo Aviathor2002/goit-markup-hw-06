@@ -94,28 +94,27 @@ img {
 
 /* Header */
 
-.icon-link {
+.icon-list {
   display: flex;
   align-items: center;
+}
+
+.icon-mail-link,
+.icon-phone-link {
+  display: flex;
+
   justify-content: center;
+  align-items: center;
+
+  gap: 10px;
 }
 
-.icon-mail {
-  margin-right: 10px;
-  fill: #757575;
-}
-.icon-mail:hover {
-  fill: var(--accent-color);
-}
+.icon-mail,
 .icon-smartphone {
-  margin-right: 10px;
   fill: #757575;
 }
-.icon-smartphone:hover {
-  fill: var(--accent-color);
-}
 
-.contacts-link:hover .icon-mail,
+.icon-mail-link:hover .icon-mail,
 .contacts-link:hover .icon-smartphone {
   fill: var(--accent-color);
 }
@@ -132,6 +131,8 @@ img {
 
 .site-nav {
   display: flex;
+  align-items: center;
+
   margin-left: auto;
 }
 .site-nav .item {
@@ -166,8 +167,6 @@ img {
 .contacts-link.header-link {
   padding-top: 32px;
   padding-bottom: 32px;
-
-  display: block;
 
   color: var(--primary-text-color);
 
@@ -314,6 +313,7 @@ img {
 
 .icon-team {
   display: flex;
+  gap: 10px;
   justify-content: center;
   padding-bottom: 30px;
   /* margin-left: 32px;
@@ -321,18 +321,25 @@ img {
 }
 
 .social-icon {
+  width: 20px;
+  height: 20px;
+
+  fill: #afb1b8;
+}
+
+.icon-link {
   width: 44px;
   height: 44px;
 
-  margin-right: 10px;
-
-  fill: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-link:hover .social-icon {
   fill: #fff;
 }
-.social-icon:hover {
+.icon-link:hover {
   background: #2196f3;
   border-radius: 50px;
 }
@@ -390,6 +397,33 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+/* Clients section */
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients-logo {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 30px;
+}
+
+.icon-clients {
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 /* portfolio section */
@@ -489,17 +523,7 @@ img {
 
 /* footer */
 
-.social-footer-icon {
-  width: 44px;
-  height: 44px;
-
-  fill: var(--primary-white-color);
-
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50px;
-}
-
-.social-footer-icon:hover {
+.icon-link-footer:hover {
   background: #2196f3;
 }
 
@@ -507,15 +531,28 @@ img {
   margin-right: 0;
 }
 
-.icon-link-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .icon-footer {
   display: flex;
   gap: 10px;
+}
+
+.icon-link-footer {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+}
+
+.social-footer-icon {
+  width: 20px;
+  height: 20px;
+
+  fill: var(--primary-white-color);
 }
 
 .icon-footer-text {
