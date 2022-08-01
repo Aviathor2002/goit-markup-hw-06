@@ -5,15 +5,6 @@
   --primary-white-color: #ffffff;
 }
 
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
 
@@ -101,6 +92,21 @@ img {
 }
 
 /* Header */
+
+.icon-mail {
+  margin-right: 10px;
+  fill: #757575;
+}
+.icon-mail:hover {
+  fill: var(--accent-color);
+}
+.icon-smartphone {
+  margin-right: 10px;
+  fill: #757575;
+}
+.icon-smartphone:hover {
+  fill: var(--accent-color);
+}
 
 .navigation-link {
   display: flex;
@@ -225,6 +231,19 @@ img {
 
 /* section features */
 
+.icon-features {
+  width: 270px;
+  height: 120px;
+  left: 215px;
+  top: 774px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px;
+
+  margin-bottom: 30px;
+}
+
 .list-features {
   display: flex;
 }
@@ -281,9 +300,38 @@ img {
 
 /* Team  */
 
+.icon-team {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  /* margin-left: 32px;
+  margin-right: 32px; */
+}
+
+.social-icon {
+  width: 44px;
+  height: 44px;
+
+  margin-right: 10px;
+
+  fill: #afb1b8;
+}
+
+.icon-link:hover .social-icon {
+  fill: #fff;
+}
+.social-icon:hover {
+  background: #2196f3;
+  border-radius: 50px;
+}
+
+.linkedin-icon {
+  margin-right: 0;
+}
+
 .text-conteiner {
   padding-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .team-list {
@@ -433,6 +481,10 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
 }
 
 address {
