@@ -16,6 +16,7 @@ body {
 h1,
 h2,
 h3,
+p,
 ul {
   margin: 0;
 }
@@ -105,6 +106,11 @@ img {
   fill: #757575;
 }
 .icon-smartphone:hover {
+  fill: var(--accent-color);
+}
+
+.contacts-link:hover .icon-mail,
+.contacts-link:hover .icon-smartphone {
   fill: var(--accent-color);
 }
 
@@ -477,14 +483,54 @@ img {
 
 /* footer */
 
+.social-footer-icon {
+  width: 44px;
+  height: 44px;
+
+  margin-right: 10px;
+
+  fill: var(--primary-white-color);
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+}
+
+.social-footer-icon:hover {
+  background: #2196f3;
+}
+
+.linkedin-icon-footer {
+  margin-right: 0;
+}
+
+.icon-footer-text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.icon-footer-conteiner {
+  margin-left: 70px;
+  display: inline-block;
+}
+
+.footer-conteiner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-
-  display: flex;
-  justify-content: center;
-  padding-bottom: 30px;
 }
 
 address {
