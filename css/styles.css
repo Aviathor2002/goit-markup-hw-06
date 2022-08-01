@@ -493,8 +493,6 @@ img {
   width: 44px;
   height: 44px;
 
-  margin-right: 10px;
-
   fill: var(--primary-white-color);
 
   background: rgba(255, 255, 255, 0.1);
@@ -507,6 +505,17 @@ img {
 
 .linkedin-icon-footer {
   margin-right: 0;
+}
+
+.icon-link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-footer {
+  display: flex;
+  gap: 10px;
 }
 
 .icon-footer-text {
