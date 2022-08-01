@@ -94,6 +94,12 @@ img {
 
 /* Header */
 
+.icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .icon-mail {
   margin-right: 10px;
   fill: #757575;
