@@ -99,8 +99,7 @@ img {
   align-items: center;
 }
 
-.icon-mail-link,
-.icon-phone-link {
+.header-link {
   display: flex;
 
   justify-content: center;
@@ -109,13 +108,12 @@ img {
   gap: 10px;
 }
 
-.icon-mail,
-.icon-smartphone {
+.icon-site-nav {
   fill: #757575;
 }
 
-.icon-mail-link:hover .icon-mail,
-.contacts-link:hover .icon-smartphone {
+.header-link:hover .icon-site-nav,
+.header-link:focus .icon-site-nav {
   fill: var(--accent-color);
 }
 
@@ -218,9 +216,11 @@ img {
   margin-right: auto;
 }
 .hero-btn {
+  min-width: 216px;
+
   padding: 10px 26px;
   border-radius: 4px;
-  min-width: 216px;
+
   border: 1px solid transparent;
 
   font-family: inherit;
@@ -336,11 +336,13 @@ img {
   justify-content: center;
 }
 
-.icon-link:hover .social-icon {
-  fill: #fff;
+.icon-link:hover .social-icon,
+.icon-link:focus .social-icon {
+  fill: var(--primary-white-color);
 }
-.icon-link:hover {
-  background: #2196f3;
+.icon-link:hover,
+.icon-link:focus {
+  background: var(--accent-color);
   border-radius: 50px;
 }
 
@@ -407,6 +409,8 @@ img {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
 }
 
 .clients-logo {
@@ -418,7 +422,28 @@ img {
   gap: 30px;
 }
 
-.icon-clients {
+.icon-logo {
+  width: 106px;
+  height: 60px;
+
+  fill: #afb1b8;
+}
+
+.icon-clients-link:hover .icon-logo,
+.icon-clients-link:focus .icon-logo {
+  fill: var(--accent-color);
+}
+
+.icon-clients-link:hover,
+.icon-clients-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.icon-clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 170px;
   height: 92px;
 
@@ -468,11 +493,6 @@ img {
 }
 
 /* portfolio projects */
-/* .conteiner.projects {
-  padding: 0;
-  padding-bottom: 94px;
-  padding-top: 94px;
-} */
 
 .projects.list {
   display: flex;
@@ -503,6 +523,11 @@ img {
   margin-bottom: 0px;
 }
 
+.project:hover,
+.project:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .project-name {
   font-size: 18px;
   line-height: 2;
@@ -523,7 +548,8 @@ img {
 
 /* footer */
 
-.icon-link-footer:hover {
+.icon-link-footer:hover,
+.icon-link-footer:focus {
   background: #2196f3;
 }
 
@@ -576,7 +602,6 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-bottom: 30px;
 }
 
 .footer {
