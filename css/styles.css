@@ -179,7 +179,7 @@ img {
 }
 /* main section hero*/
 
-.hero-background {
+.hero {
   max-width: 1600px;
   height: 600px;
 
@@ -190,9 +190,9 @@ img {
     url('../img/hero.jpg');
 
   background-position: center;
-}
+  background-size: cover;
+  background-repeat: no-repeat;
 
-.hero {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
@@ -242,17 +242,17 @@ img {
 
 /* section features */
 
-.icon-features {
-  width: 270px;
+.item-icon-features {
   height: 120px;
-  left: 215px;
-  top: 774px;
 
   background: #f5f4fa;
   border-radius: 4px;
-  padding: 25px 100px;
 
   margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .list-features {
@@ -315,9 +315,7 @@ img {
   display: flex;
   gap: 10px;
   justify-content: center;
-  padding-bottom: 30px;
-  /* margin-left: 32px;
-  margin-right: 32px; */
+  padding-top: 16px;
 }
 
 .social-icon {
@@ -352,7 +350,7 @@ img {
 
 .text-conteiner {
   padding-top: 30px;
-  margin-bottom: 16px;
+  padding-bottom: 30px;
 }
 
 .team-list {
@@ -493,6 +491,15 @@ img {
 }
 
 /* portfolio projects */
+.project-link {
+  text-decoration: none;
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .projects.list {
   display: flex;
@@ -508,6 +515,8 @@ img {
   padding-left: 24px;
   padding-bottom: 20px;
   padding-right: 24px;
+
+  text-decoration: none;
 }
 
 .project {
@@ -522,13 +531,14 @@ img {
 .project:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
-
-.project:hover,
-.project:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+/* 
+.project-link:hover,
+.project-link:focus {
+ 
+} */
 .project-name {
+  text-decoration: none;
+
   font-size: 18px;
   line-height: 2;
 
@@ -536,6 +546,8 @@ img {
 }
 
 .project-technology {
+  text-decoration: none;
+
   margin-top: 4px;
 
   font-size: 16px;
@@ -600,8 +612,8 @@ img {
 
 .footer-conteiner {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+
+  align-items: baseline;
 }
 
 .footer {
