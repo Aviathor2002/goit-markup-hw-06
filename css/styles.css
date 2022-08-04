@@ -181,7 +181,6 @@ img {
 
 .hero {
   max-width: 1600px;
-  height: 600px;
 
   margin-left: auto;
   margin-right: auto;
@@ -211,7 +210,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  margin-bottom: 30;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -315,7 +314,7 @@ img {
   display: flex;
   gap: 10px;
   justify-content: center;
-  padding-top: 16px;
+  margin-top: 16px;
 }
 
 .social-icon {
