@@ -182,7 +182,7 @@ img {
   border-radius: 2px;
 
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 }
 .contacts-link.header-link {
   padding-top: 32px;
@@ -313,13 +313,25 @@ img {
 
 .work-block {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .work-text {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  bottom: 0;
+  left: 0;
+
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
-  text-align: center;
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -329,12 +341,6 @@ img {
   width: 100%;
 
   background: rgba(47, 48, 58, 0.8);
-  padding-top: 27px;
-  padding-bottom: 27px;
-
-  position: absolute;
-
-  transform: translateY(-100%);
 }
 
 .work {
@@ -772,7 +778,7 @@ address {
 
   opacity: 1;
 
-  transition: opacity 250ms var(--cubic-bezier);
+  transition: opacity 250ms var(--cubic-bezier), visibility 250ms var(--cubic-bezier);
 }
 
 .backdrop.is-hidden {
@@ -824,4 +830,6 @@ address {
   padding: 0;
   margin-right: 8px;
   margin-top: 8px;
+
+  cursor: pointer;
 }
